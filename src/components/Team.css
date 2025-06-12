@@ -1,0 +1,253 @@
+.team {
+  padding: 4rem 0;
+  background: var(--light-gray);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.team-member {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.team-member-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.team-photo, .team-photo-placeholder {
+  width: 100px;
+  height: 100px;
+  background: var(--light-gray);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.team-photo {
+  object-fit: cover;
+}
+
+.team-photo-placeholder {
+  color: var(--text-gray);
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+  color: var(--white);
+}
+
+.team-member h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+}
+
+.team-member h4 {
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.team-member-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.team-member-content li {
+  padding: 0.25rem 0;
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+.expertise-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.expertise-tag {
+  background: var(--secondary-color);
+  color: var(--white);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+}
+
+/* Approach Section */
+.approach {
+  padding: 3rem 0;
+  text-align: center;
+  background: var(--white);
+}
+
+.approach-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.approach-item {
+  padding: 1.5rem;
+}
+
+.approach-item h3 {
+  color: var(--accent-color);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.approach-item p {
+  color: var(--text-gray);
+  font-size: 1rem;
+}
+
+/* Ways of Working Section */
+.ways-of-working {
+  padding: 4rem 0;
+  background: var(--light-gray);
+}
+
+.engagement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.engagement-model {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.engagement-model:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.engagement-model h3 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.engagement-model p {
+  color: var(--text-gray);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.engagement-model ul {
+  list-style: none;
+  padding: 0;
+}
+
+.engagement-model li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--text-gray);
+  font-size: 0.95rem;
+}
+
+.engagement-model li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.working-philosophy {
+  background: var(--white);
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.working-philosophy h3 {
+  color: var(--primary-color);
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.working-philosophy > p {
+  color: var(--text-gray);
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.philosophy-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.philosophy-item {
+  text-align: center;
+}
+
+.philosophy-item strong {
+  display: block;
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.philosophy-item p {
+  color: var(--text-gray);
+  font-size: 0.95rem;
+}
+
+.philosophy-footer {
+  margin-top: 2rem;
+}
+
+.philosophy-highlight {
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.philosophy-subtext {
+  color: var(--text-gray);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .team-member-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .engagement-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .working-philosophy {
+    padding: 2rem;
+  }
+  
+  .philosophy-points {
+    grid-template-columns: 1fr;
+  }
+}
