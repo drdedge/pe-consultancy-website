@@ -1,0 +1,124 @@
+/* Portfolio Container */
+.portfolio-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: #f8f9fa;
+  display: flex;
+}
+
+.portfolio-container.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: #000;
+}
+
+.portfolio-container.fullscreen .portfolio-nav {
+  display: none;
+}
+
+.portfolio-container.fullscreen .menu-toggle {
+  display: none;
+}
+
+.portfolio-container.fullscreen .keyboard-hints {
+  opacity: 0;
+}
+
+/* Portfolio Content */
+.portfolio-content {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: margin-left 0.3s ease;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.portfolio-content.menu-open {
+  margin-left: 320px;
+}
+
+.portfolio-content.menu-closed {
+  margin-left: 0;
+}
+
+/* Error State */
+.portfolio-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+/* Keyboard Hints */
+.keyboard-hints {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+  font-size: 0.875rem;
+  color: #666;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.keyboard-hints span {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 4px 12px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .portfolio-content.menu-open {
+    margin-left: 0;
+  }
+  
+  .portfolio-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 85%;
+    max-width: 320px;
+    z-index: 1000;
+    transform: translateX(-100%);
+  }
+  
+  .portfolio-nav.open {
+    transform: translateX(0);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .keyboard-hints {
+    display: none;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .portfolio-nav,
+  .menu-toggle,
+  .slide-controls,
+  .keyboard-hints {
+    display: none !important;
+  }
+  
+  .portfolio-content {
+    margin-left: 0 !important;
+  }
+  
+  .portfolio-container {
+    height: auto;
+    background: white;
+  }
+}

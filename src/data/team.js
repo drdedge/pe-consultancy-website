@@ -21,7 +21,7 @@ export const teamMembers = [
       "Entrepreneurship & Innovation"
     ],
     achievements: [
-      "Built Deals-wide 'Generative Analytics Toolkit' used to address some of the core challnges Deal teams repeatedly have to address",
+      "Built Deals-wide 'Generative Analytics Toolkit' used to address some of the core challenges Deal teams repeatedly have to address during diligence",
       "Generated £4M annual revenue through customer analytics solutions at PwC",
       "Founded property management and export businesses alongside corporate career",
       "Associate Lecturer pioneering AI module at XJTLU with exceptional student feedback"
@@ -55,8 +55,8 @@ export const teamMembers = [
 
 export const approachMetrics = [
   {
-    value: "6-8",
-    label: "Weeks to POC"
+    value: "4-8",
+    label: "Weeks to Value"
   },
   {
     value: "50+",
@@ -72,49 +72,83 @@ export const approachMetrics = [
   }
 ];
 
+export const companyInfo = {
+  approach: {
+    title: "Our Approach: Rapid Value Identification",
+    description: "As a nimble 2-person consultancy backed by a network of specialists, we excel at quickly identifying opportunities and building compelling business cases. We help you get started fast, prove initial value, and when needed, facilitate the selection of larger consulting firms for multi-year transformations.",
+    keyPoints: [
+      "Rapid 4-16 week engagements to identify and demonstrate value",
+      "Deep expertise from hands-on PE and portfolio company experience",
+      "Access to specialist network for specific domains when needed",
+      "Help build business cases and select strategic partners for long-term initiatives"
+    ]
+  },
+  whyUs: {
+    title: "Why Work With Us",
+    points: [
+      {
+        title: "Speed to Value",
+        description: "No large team overhead. Direct access to senior expertise. Quick decisions and rapid iterations."
+      },
+      {
+        title: "PE-Native Understanding",
+        description: "We've been in your shoes. We understand LP pressures, portfolio dynamics, and the need for quick wins."
+      },
+      {
+        title: "Flexible Engagement",
+        description: "From 4-week proof of concepts to 16-week transformations. Scale up with our network when needed."
+      },
+      {
+        title: "Bridge to Scale",
+        description: "We help you build compelling business cases and can facilitate introductions to larger firms for multi-year programs."
+      }
+    ]
+  }
+};
+
 export const engagementModels = [
   {
-    icon: "🏢",
-    title: "Embedded Delivery",
-    description: "We work hands-on in your environment, ensuring full compliance with your data governance and architecture standards. Our team integrates seamlessly with your existing infrastructure.",
+    icon: "🚀",
+    title: "Rapid Assessment & POC",
+    description: "4-8 week sprints to identify opportunities, build proof of concepts, and demonstrate tangible value. Perfect for testing ideas before larger commitments.",
     features: [
-      "On-site or remote integration",
-      "Use your tools and platforms",
-      "Follow your security protocols",
-      "Knowledge transfer throughout"
+      "Quick opportunity identification",
+      "Working prototype delivery",
+      "Clear ROI demonstration",
+      "Go/no-go recommendations"
     ]
   },
   {
-    icon: "🔧",
-    title: "Build & Transfer",
-    description: "We develop self-hosted solutions that you own completely. Your data never leaves your environment, ensuring full compliance and security.",
+    icon: "🎯",
+    title: "Targeted Transformation",
+    description: "8-16 week focused initiatives to solve specific challenges. We bring in specialist expertise from our network as needed for domain-specific requirements.",
     features: [
-      "Full IP ownership",
-      "Self-hosted in your cloud",
-      "Complete documentation",
-      "Training for your team"
+      "End-to-end solution delivery",
+      "Access to specialist network",
+      "Production-ready deployment",
+      "Team enablement included"
+    ]
+  },
+  {
+    icon: "🔍",
+    title: "Strategic Advisory",
+    description: "Help build comprehensive business cases for larger initiatives. We can facilitate introductions to tier-1 consulting firms when multi-year transformations are needed.",
+    features: [
+      "Business case development",
+      "Vendor selection support",
+      "Strategic partner introductions",
+      "Transition planning"
     ]
   },
   {
     icon: "🤝",
-    title: "Collaborative Integration",
-    description: "We excel at bridging the gap between IT, analytics teams, and front office stakeholders. Working closely with your SMEs ensures solutions that actually get used.",
+    title: "Flexible Resourcing",
+    description: "Access our network of pre-vetted specialists for specific needs - from data engineers to industry experts. Scale up or down as your project evolves.",
     features: [
-      "SME collaboration workshops",
-      "Cross-functional alignment",
-      "Business-IT translation",
-      "Change management support"
-    ]
-  },
-  {
-    icon: "📊",
-    title: "Product & Project Leadership",
-    description: "Beyond technical delivery, we provide experienced product and project management to ensure successful outcomes and adoption across your organization.",
-    features: [
-      "Agile delivery management",
-      "Product roadmap development",
-      "Sprint planning & execution",
-      "Success metrics tracking"
+      "On-demand expertise",
+      "Pre-vetted specialists",
+      "Flexible team scaling",
+      "Single point of contact"
     ]
   }
 ];

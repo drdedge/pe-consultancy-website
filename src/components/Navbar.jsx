@@ -9,6 +9,7 @@ export default function Navbar() {
         <Link to="/" className="logo">Data & AI Analytics</Link>
         <ul className="nav-links">
           <li><NavLink to="/" end>Home</NavLink></li>
+          <li><NavLink to="/portfolio">Portfolio</NavLink></li>
           <li><NavLink to="/about">About Us</NavLink></li>
         </ul>
       </div>

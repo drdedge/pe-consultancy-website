@@ -1,0 +1,161 @@
+/* Slide Controls Container */
+.slide-controls {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: white;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 40px;
+  z-index: 50;
+}
+
+/* Control Buttons */
+.control-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #e0e0e0;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.control-btn:hover:not(:disabled) {
+  background: #f5f5f5;
+  border-color: #0066cc;
+  color: #0066cc;
+  transform: scale(1.1);
+}
+
+.control-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.control-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Previous/Next Buttons */
+.prev-btn {
+  order: 1;
+}
+
+.next-btn {
+  order: 3;
+}
+
+/* Slide Info */
+.slide-info {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 200px;
+}
+
+.slide-counter {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background: #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #0066cc;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Fullscreen Button */
+.fullscreen-btn {
+  order: 4;
+  margin-left: auto;
+}
+
+.fullscreen-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .slide-controls {
+    height: 60px;
+    padding: 0 20px;
+    gap: 20px;
+  }
+  
+  .control-btn {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .control-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .slide-info {
+    min-width: 120px;
+  }
+  
+  .slide-counter {
+    font-size: 0.875rem;
+  }
+  
+  .fullscreen-btn {
+    display: none;
+  }
+}
+
+/* Fullscreen Mode */
+.portfolio-container.fullscreen .slide-controls {
+  background: rgba(0, 0, 0, 0.8);
+  border-top: none;
+}
+
+.portfolio-container.fullscreen .control-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.portfolio-container.fullscreen .control-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: white;
+  color: white;
+}
+
+.portfolio-container.fullscreen .slide-counter {
+  color: white;
+}
+
+.portfolio-container.fullscreen .progress-bar {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.portfolio-container.fullscreen .progress-fill {
+  background: white;
+}

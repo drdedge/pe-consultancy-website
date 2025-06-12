@@ -3,65 +3,94 @@
   background: linear-gradient(to bottom, var(--white) 0%, var(--light-gray) 100%);
 }
 
-.portfolio-container {
-  margin-top: 2rem;
+.case-studies-intro {
+  text-align: center;
+  color: var(--text-gray);
+  font-size: 1.125rem;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.portfolio-section {
+.category-section {
   margin-bottom: 4rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #e5e7eb;
 }
 
-.portfolio-section:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
+.category-section:last-child {
+  margin-bottom: 2rem;
 }
 
-.portfolio-section h3 {
-  font-size: 1.875rem;
+.category-title {
+  font-size: 2rem;
   color: var(--primary-color);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
-.portfolio-slider-container {
-  position: relative;
+.category-description {
+  color: var(--text-gray);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
 }
 
-.portfolio-slider {
-  display: flex;
-  gap: 1.5rem;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 1rem 20px;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
-.portfolio-slider::-webkit-scrollbar {
-  display: none;
-}
-
-.portfolio-card {
-  flex: 0 0 400px;
+.case-card {
   background: var(--white);
-  border-radius: 8px;
+  border-radius: 12px;
+  overflow: hidden;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  padding: 2rem;
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
   display: flex;
   flex-direction: column;
 }
 
-.portfolio-card:hover {
+.case-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-impact {
+.case-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: var(--light-gray);
+}
+
+.case-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+  color: var(--text-gray);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.case-content {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.case-headline {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--accent-color);
@@ -69,115 +98,131 @@
   line-height: 1.3;
 }
 
-.portfolio-challenge {
+.case-challenge {
   color: var(--text-gray);
-  margin-bottom: 1rem;
   font-size: 0.95rem;
-  flex-grow: 1;
   line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
 }
 
-.portfolio-solution {
-  background: var(--light-gray);
-  padding: 1rem;
-  border-radius: 6px;
-  margin-bottom: 1rem;
+.case-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.portfolio-solution h5 {
-  color: var(--primary-color);
-  font-size: 0.875rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.portfolio-solution p {
-  font-size: 0.875rem;
-  color: var(--text-gray);
-  margin-bottom: 0.5rem;
-}
-
-.portfolio-tools {
-  margin-top: 0.5rem;
-  font-size: 0.8rem;
-  color: #64748b;
-}
-
-.portfolio-metrics {
+.tech-tags {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
 }
 
-.metric-tag {
-  background: var(--secondary-color);
-  color: var(--white);
+.tech-tag {
+  background: var(--light-gray);
+  color: var(--primary-color);
   padding: 0.25rem 0.75rem;
   border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 
-.slider-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: var(--white);
-  border: 2px solid var(--secondary-color);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+.timeframe {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s;
-  z-index: 20;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  font-size: 1.2rem;
-  color: var(--secondary-color);
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-.slider-arrow:hover:not(.disabled) {
+.timeframe-label {
+  font-size: 0.75rem;
+  color: var(--text-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.timeframe-value {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.case-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.75rem;
+}
+
+.metric-box {
   background: var(--secondary-color);
   color: var(--white);
-  box-shadow: 0 4px 12px rgba(8, 145, 178, 0.3);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.3;
 }
 
-.slider-arrow.prev {
-  left: 0;
+.case-studies-cta {
+  text-align: center;
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid #e5e7eb;
 }
 
-.slider-arrow.next {
-  right: 0;
+.case-studies-cta p {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
 }
 
-.slider-arrow.disabled {
-  opacity: 0.3;
-  cursor: not-allowed;
-  box-shadow: none;
+.btn {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--accent-color);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: #d97706;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
 }
 
 @media (max-width: 768px) {
-  .portfolio-card {
-    flex: 0 0 320px;
+  .cases-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
   
-  .slider-arrow {
-    width: 35px;
-    height: 35px;
-    font-size: 0.9rem;
+  .case-meta {
+    flex-direction: column;
+    align-items: flex-start;
   }
   
-  .slider-arrow.prev {
-    left: 5px;
+  .timeframe {
+    align-items: flex-start;
   }
   
-  .slider-arrow.next {
-    right: 5px;
+  .case-metrics {
+    grid-template-columns: 1fr;
   }
   
-  .case-studies {
-    padding: 3rem 0;
+  .category-title {
+    font-size: 1.5rem;
+  }
+  
+  .case-headline {
+    font-size: 1.25rem;
   }
 }
