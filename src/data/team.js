@@ -6,49 +6,49 @@ export const teamMembers = [
   {
     id: 'david-edgeley',
     name: 'David Edgeley',
-    role: 'Co-Founder & Data Analytics Lead',
+    role: 'Co-Founder & AI Strategy Lead',
     photo: davidPhoto,
     background: [
-      "Senior Manager at PwC's Deals Insights & Analytics division (2015-present)",
-      "Chartered Accountant with PhD in Computational Chemistry",
-      "Led 200+ staff Generative AI initiatives at PwC",
-      "Delivered analytics solutions across 20+ PE transactions"
+      "Vice President of AI at Alcentra (BSP, Franklin Templeton) architecting enterprise AI solutions",
+      "Former PwC Deals Generative AI Architect who delivered 12+ POCs and production applications",
+      "Chartered Accountant with PhD in Computational Chemistry bridging finance and technology",
+      "10+ years developing end-to-end AI/ML solutions from ideation to production rollout"
     ],
     expertise: [
-      "Cloud Architecture",
-      "AI/ML",
-      "Financial Modeling",
-      "Portfolio Analytics"
+      "Enterprise AI Architecture",
+      "Financial Services & Private Equity",
+      "Cloud & ML Engineering",
+      "Entrepreneurship & Innovation"
     ],
     achievements: [
-      "Created globally-adopted GenAI training programs",
-      "Published Microsoft case study on Value Insights platform",
-      "Founded successful e-commerce and property businesses",
-      "First-time ACA pass (2015)"
+      "Built Deals-wide 'Generative Analytics Toolkit' used to address some of the core challnges Deal teams repeatedly have to address",
+      "Generated £4M annual revenue through customer analytics solutions at PwC",
+      "Founded property management and export businesses alongside corporate career",
+      "Associate Lecturer pioneering AI module at XJTLU with exceptional student feedback"
     ]
   },
   {
     id: 'jamal-ahmad',
     name: 'Jamal Ahmad',
-    role: 'Co-Founder & Technology Strategy Lead',
+    role: 'Co-Founder & Financial Modelling Expert',
     photo: jamalPhoto,
     background: [
-      "Senior technology consultant with expertise in enterprise architecture",
-      "Specialist in cloud transformation and data platform design",
-      "Experience across financial services and private equity sectors",
-      "Led digital transformation initiatives for portfolio companies"
+      "Senior financial modelling specialist with deep M&A and restructuring expertise",
+      "Led complex transactions including Barclays' £1.8bn options pricing and Intu plc restructuring",
+      "Pioneered innovative solutions using Monte Carlo simulations and genetic algorithms",
+      "Expert in automating financial processes with AI/ML and advanced analytics"
     ],
     expertise: [
-      "Enterprise Architecture",
-      "Cloud Strategy",
-      "Data Platforms",
-      "Digital Transformation"
+      "Financial Modelling & Valuation",
+      "M&A Advisory & Due Diligence",
+      "Options Pricing & Stochastic Modelling",
+      "AI/ML & Process Automation"
     ],
     achievements: [
-      "Architected scalable data platforms for 10+ PE portfolio companies",
-      "Led successful cloud migrations reducing infrastructure costs by 40%",
-      "Developed proprietary frameworks for rapid technology assessments",
-      "Expert in bridging technology and business strategy"
+      "Advised on £6bn+ in complex transactions including family disputes and restructurings",
+      "Built genetic algorithm model for $6bn Project Carbon, enabling fair asset allocation",
+      "Developed automated reporting solutions for Rothschild Direct Lending using Azure AI",
+      "Created value for startups through working capital optimization and cost reduction"
     ]
   }
 ];
