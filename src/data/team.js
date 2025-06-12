@@ -1,9 +1,13 @@
+// Import images at the top of the file
+import davidPhoto from '../assets/images/about/team/david-edgeley.jpg';
+import jamalPhoto from '../assets/images/about/team/jamal-ahmad.jpg';
+
 export const teamMembers = [
   {
     id: 'david-edgeley',
     name: 'David Edgeley',
     role: 'Co-Founder & Data Analytics Lead',
-    photo: null, // Will be updated when photo is added: '/src/assets/images/about/team/david-edgeley.jpg'
+    photo: davidPhoto,
     background: [
       "Senior Manager at PwC's Deals Insights & Analytics division (2015-present)",
       "Chartered Accountant with PhD in Computational Chemistry",
@@ -24,19 +28,27 @@ export const teamMembers = [
     ]
   },
   {
-    id: 'partner-2',
-    name: '[Partner Name]',
-    role: 'Co-Founder & [Specific Focus Area]',
-    photo: null,
+    id: 'jamal-ahmad',
+    name: 'Jamal Ahmad',
+    role: 'Co-Founder & Technology Strategy Lead',
+    photo: jamalPhoto,
     background: [
-      "[Partner background to be added]"
+      "Senior technology consultant with expertise in enterprise architecture",
+      "Specialist in cloud transformation and data platform design",
+      "Experience across financial services and private equity sectors",
+      "Led digital transformation initiatives for portfolio companies"
     ],
     expertise: [
-      "[Expertise 1]",
-      "[Expertise 2]"
+      "Enterprise Architecture",
+      "Cloud Strategy",
+      "Data Platforms",
+      "Digital Transformation"
     ],
     achievements: [
-      "[Partner achievements to be added]"
+      "Architected scalable data platforms for 10+ PE portfolio companies",
+      "Led successful cloud migrations reducing infrastructure costs by 40%",
+      "Developed proprietary frameworks for rapid technology assessments",
+      "Expert in bridging technology and business strategy"
     ]
   }
 ];
