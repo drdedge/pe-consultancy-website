@@ -7,16 +7,17 @@ export default function About() {
   const location = useLocation();
 
   useEffect(() => {
-    // Handle anchor navigation
-    if (location.hash) {
-      const id = location.hash.replace('#', '');
-      setTimeout(() => {
-        const element = document.getElementById(id);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
-    }
+    // Scroll to ways-of-working section if coming from home page
+    // or if there's a hash in the URL
+    const scrollToSection = () => {
+      const element = document.getElementById('ways-of-working');
+      if (element && location.state?.scrollTo === 'ways-of-working') {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+    
+    // Small delay to ensure DOM is ready
+    setTimeout(scrollToSection, 100);
   }, [location]);
 
   return (

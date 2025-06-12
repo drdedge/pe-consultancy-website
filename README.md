@@ -82,7 +82,9 @@ The site automatically deploys to GitHub Pages when changes are pushed to the `m
 3. Push to `main` branch to trigger deployment
 4. Access at: `https://[username].github.io/[repository-name]/`
 
-**Note**: If you rename the repository, update the `base` option in `vite.config.js`.
+**Note**: 
+- If you rename the repository, update the `base` option in `vite.config.js`
+- The build process automatically creates a `404.html` file to handle client-side routing on GitHub Pages
 
 ## 🔧 Development Notes
 

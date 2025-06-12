@@ -23,7 +23,7 @@ export default function Home() {
     },
     {
       text: 'How We Work',
-      to: '/about#ways-of-working',
+      to: '/about',
       variant: 'secondary'
     }
   ];
