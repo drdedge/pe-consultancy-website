@@ -1,6 +1,7 @@
 # PE Consultancy Website
 
 This project contains a simple React based website for a private equity analytics consultancy.
+*Updated - 2025-06-12 09:27*
 
 ## Development
 
