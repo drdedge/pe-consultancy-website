@@ -56,9 +56,9 @@ export default function Home() {
         <meta property="og:image" content={shareImage} />
       </Helmet>
       <Hero
-        title="Transform Deal Intelligence with Data & AI"
-        subtitle="From due diligence to portfolio optimization, we deliver actionable insights that drive value creation"
-        subtext="Your single source of truth across the entire investment lifecycle"
+        title="Accelerate Portfolio Value Creation Through Advanced Analytics"
+        subtitle="From deal sourcing to exit, our insights empower smarter decisions"
+        subtext="Leverage AI-driven intelligence to unlock growth across your investments"
         buttons={heroButtons}
       />
       <Services />

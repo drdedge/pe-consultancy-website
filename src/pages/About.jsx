@@ -46,8 +46,8 @@ export default function About() {
         <meta property="og:image" content={shareImage} />
       </Helmet>
       <Hero
-        title="Data-Driven Leaders with PE DNA"
-        subtitle="Combining technical excellence with deep transaction experience"
+        title="Senior Advisors to Private Equity Leadership Teams"
+        subtitle="Driving value creation strategies with data & AI expertise"
         subtext="We integrate seamlessly with your teams to deliver solutions you own and control"
       />
       <TeamSection />
