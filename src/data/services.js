@@ -1,105 +1,105 @@
 export const services = [
   {
-    title: "AI-Powered Solutions",
-    icon: "🤖", // Can be replaced with actual icon/image
+    title: "Portfolio Value Creation",
+    icon: "PV",
     items: [
       {
-        title: "AI Strategy & Implementation",
-        description: "From vendor review to production rollout"
+        title: "Revenue Growth Initiatives",
+        description: "[5-15%] average top-line uplift across portfolio"
       },
       {
-        title: "Intelligent Automation",
-        description: "Meeting capture/transcription, investor briefing agents"
+        title: "Margin Expansion",
+        description: "[3-7%] EBITDA improvement through cost efficiency"
       },
       {
-        title: "AI ESG Assistant",
-        description: "Automated ESG assessment against reporting frameworks"
+        title: "Working Capital Optimisation",
+        description: "[10-20%] cash release from operations"
       },
       {
-        title: "RAG Systems & Custom Models",
-        description: "Fine-tuned solutions for PE-specific use cases"
+        title: "Pricing & Packaging",
+        description: "[2-5%] margin increase via optimized pricing"
       },
       {
-        title: "Chatbots & Workflow Integration",
-        description: "Embedded AI across portfolio operations"
+        title: "Exit Readiness Planning",
+        description: "Up to [20%] valuation uplift on exit"
       }
     ]
   },
   {
-    title: "Portfolio Intelligence Platform",
-    icon: "📊",
+    title: "Operational Due Diligence & Monitoring",
+    icon: "ODD",
     items: [
       {
-        title: "Single Source of Truth",
-        description: "Master data management across portfolio companies"
+        title: "Rapid Risk Assessment",
+        description: "Identify cost exposures and synergy opportunities pre-deal"
       },
       {
-        title: "Due Diligence Automation",
-        description: "AI-powered FDD and operational DD"
+        title: "KPI Dashboard Buildout",
+        description: "Real-time tracking of financial health"
       },
       {
-        title: "Portfolio Analytics",
-        description: "Real-time performance tracking and benchmarking"
+        title: "Performance Benchmarking",
+        description: "Spot underperformance against peers"
       },
       {
-        title: "Alternative Data Integration",
-        description: "Web scraping, satellite imagery, market intelligence"
+        title: "Integration Planning",
+        description: "[5-10%] higher synergy capture post-close"
       },
       {
-        title: "Predictive Analytics",
-        description: "Churn, pricing, and revenue optimization models"
+        title: "Post-Acquisition Tracking",
+        description: "Ensure delivery of forecast benefits"
       }
     ]
   },
   {
-    title: "Fund Operations Excellence",
-    icon: "⚙️",
+    title: "Fund Operations Automation",
+    icon: "OPS",
     items: [
       {
-        title: "Quarterly Review Automation",
-        description: "Excel/VBA/SQL automated analysis and commentary"
+        title: "Investor Reporting Automation",
+        description: "[50%] reduction in reporting time"
       },
       {
-        title: "Board Pack Automation",
-        description: "End-to-end reporting automation"
+        title: "Quarter-End Financial Packs",
+        description: "Save 2+ days per cycle through streamlining"
       },
       {
-        title: "LP Reporting Platform",
-        description: "Automated investor communications and dashboards"
+        title: "Portfolio Data Consolidation",
+        description: "[80%] fewer manual errors with single source"
       },
       {
-        title: "Month-End Optimization",
-        description: "Finance function process improvement"
+        title: "Compliance Monitoring",
+        description: "Automated checks to avoid costly fines"
       },
       {
-        title: "ESG Reporting Suite",
-        description: "Portfolio-wide ESG tracking and scenario analysis"
+        title: "Cashflow Forecasting Tools",
+        description: "Improved liquidity planning across funds"
       }
     ]
   },
   {
-    title: "Deal & Value Creation",
-    icon: "💼",
+    title: "Data & AI Transformation",
+    icon: "AI",
     items: [
       {
-        title: "Market Opportunity Assessment",
-        description: "AI-driven market sizing and competitive analysis"
+        title: "AI-Powered Analytics",
+        description: "[20%] faster decision making with predictive insights"
       },
       {
-        title: "Customer Intelligence",
-        description: "Cohort analysis, lifetime value, acquisition strategy"
+        title: "Machine Learning Models",
+        description: "[30%] improvement in forecast accuracy"
       },
       {
-        title: "Pricing & Revenue Optimization",
-        description: "Dynamic pricing models and scenario planning"
+        title: "Process Automation Bots",
+        description: "[40%] reduction in manual tasks"
       },
       {
-        title: "Post-Merger Integration",
-        description: "Technology roadmaps and synergy tracking"
+        title: "Data Lake Implementation",
+        description: "Unify data sources with [99%] reliability"
       },
       {
-        title: "Exit Readiness",
-        description: "Data room automation and equity story development"
+        title: "Custom ML Solutions",
+        description: "Targeted value creation across the portfolio"
       }
     ]
   }
