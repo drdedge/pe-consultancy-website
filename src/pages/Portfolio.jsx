@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { portfolioCategories, getAllCases, getCaseById } from '../data/portfolio';
 import PortfolioSlideNav from '../components/PortfolioSlideNav';
 import CaseStudySlide from '../components/CaseStudySlide';
 import SlideControls from '../components/SlideControls';
 import './Portfolio.css';
+import shareImage from '/src/assets/images/about/team/david-edgeley.jpg';
 
 const Portfolio = () => {
   const { caseId } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
+  const canonical = `${window.location.origin}${import.meta.env.BASE_URL.replace(/\/$/, '')}${location.pathname}`;
   const allCases = getAllCases();
   
   // Find current case or default to first
@@ -134,6 +138,26 @@ const Portfolio = () => {
 
   return (
     <div className={`portfolio-container ${isFullscreen ? 'fullscreen' : ''}`}>
+      <Helmet>
+        <title>Portfolio - Data &amp; AI Analytics Consultancy</title>
+        <meta
+          name="description"
+          content="Explore case studies showcasing our private equity analytics expertise."
+        />
+        <meta
+          name="keywords"
+          content="portfolio, case studies, private equity analytics, data projects"
+        />
+        <link rel="canonical" href={canonical} />
+        <meta property="og:title" content="Portfolio - Data &amp; AI Analytics Consultancy" />
+        <meta
+          property="og:description"
+          content="Discover how we leverage data and AI to create value across the investment lifecycle."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:image" content={shareImage} />
+      </Helmet>
       <PortfolioSlideNav
         categories={portfolioCategories}
         currentCaseId={currentCase.id}
