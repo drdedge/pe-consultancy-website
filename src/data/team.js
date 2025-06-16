@@ -6,49 +6,43 @@ export const teamMembers = [
   {
     id: 'david-edgeley',
     name: 'David Edgeley',
-    role: 'Co-Founder & AI Strategy Lead',
+    role: 'Co-Founder | AI & Digital Transformation',
     photo: davidPhoto,
     background: [
       "Vice President of AI at Alcentra (BSP, Franklin Templeton) architecting enterprise AI solutions",
-      "Former PwC Deals Generative AI Architect who delivered 12+ POCs and production applications",
-      "Chartered Accountant with PhD in Computational Chemistry bridging finance and technology",
-      "10+ years developing end-to-end AI/ML solutions from ideation to production rollout"
+      "Former PwC Deals Generative AI Architect delivering 12+ POCs and production apps",
+      "Chartered Accountant with PhD in Computational Chemistry bridging finance and technology"
     ],
     expertise: [
       "Enterprise AI Architecture",
       "Financial Services & Private Equity",
-      "Cloud & ML Engineering",
-      "Entrepreneurship & Innovation"
+      "Cloud & ML Engineering"
     ],
     achievements: [
-      "Built Deals-wide 'Generative Analytics Toolkit' used to address some of the core challenges Deal teams repeatedly have to address during diligence",
-      "Generated £4M annual revenue through customer analytics solutions at PwC",
-      "Founded property management and export businesses alongside corporate career",
-      "Associate Lecturer pioneering AI module at XJTLU with exceptional student feedback"
+      "Built Deals-wide 'Generative Analytics Toolkit' solving key diligence challenges",
+      "Generated £4M annual revenue through customer analytics at PwC",
+      "Associate Lecturer pioneering AI module at XJTLU with exceptional feedback"
     ]
   },
   {
     id: 'jamal-ahmad',
     name: 'Jamal Ahmad',
-    role: 'Co-Founder & Financial Modelling Expert',
+    role: 'Co-Founder | Financial Modelling & Analytics',
     photo: jamalPhoto,
     background: [
       "Senior financial modelling specialist with deep M&A and restructuring expertise",
       "Led complex transactions including Barclays' £1.8bn options pricing and Intu plc restructuring",
-      "Pioneered innovative solutions using Monte Carlo simulations and genetic algorithms",
       "Expert in automating financial processes with AI/ML and advanced analytics"
     ],
     expertise: [
       "Financial Modelling & Valuation",
       "M&A Advisory & Due Diligence",
-      "Options Pricing & Stochastic Modelling",
-      "AI/ML & Process Automation"
+      "Options Pricing & Stochastic Modelling"
     ],
     achievements: [
       "Advised on £6bn+ in complex transactions including family disputes and restructurings",
       "Built genetic algorithm model for $6bn Project Carbon, enabling fair asset allocation",
-      "Developed automated reporting solutions for Rothschild Direct Lending using Azure AI",
-      "Created value for startups through working capital optimization and cost reduction"
+      "Developed automated reporting solutions for Rothschild Direct Lending using Azure AI"
     ]
   }
 ];
