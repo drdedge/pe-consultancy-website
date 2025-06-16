@@ -1,5 +1,5 @@
 import React from 'react';
-import { teamMembers, approachMetrics, engagementModels, philosophyPoints } from '../data/team';
+import { teamMembers, approachPhases, engagementModels, philosophyPoints } from '../data/team';
 import './Team.css';
 
 // Placeholder image component
@@ -67,12 +67,12 @@ export const ApproachSection = () => {
     <section className="approach">
       <div className="container">
         <h2 className="section-title">From Insight to Impact in Weeks, Not Months</h2>
-        <p>We understand PE timelines. Our approach combines:</p>
+        <p>We guide every client through three phases:</p>
         <div className="approach-grid">
-          {approachMetrics.map((metric, index) => (
+          {approachPhases.map((phase, index) => (
             <div key={index} className="approach-item">
-              <h3>{metric.value}</h3>
-              <p>{metric.label}</p>
+              <h3>{phase.title}</h3>
+              <p>{phase.description}</p>
             </div>
           ))}
         </div>
@@ -89,7 +89,7 @@ export const WaysOfWorking = () => {
         <div className="engagement-grid">
           {engagementModels.map((model, index) => (
             <div key={index} className="engagement-model">
-              <h3>{model.icon} {model.title}</h3>
+              <h3>{model.title}</h3>
               <p>{model.description}</p>
               <ul>
                 {model.features.map((feature, featureIndex) => (
