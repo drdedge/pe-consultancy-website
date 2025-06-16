@@ -53,22 +53,18 @@ export const teamMembers = [
   }
 ];
 
-export const approachMetrics = [
+export const approachPhases = [
   {
-    value: "4-8",
-    label: "Weeks to Value"
+    title: "Rapid Diagnostic",
+    description: "Targeted assessment of data and processes to pinpoint quick-win opportunities."
   },
   {
-    value: "50+",
-    label: "PE Transactions"
+    title: "Proof of Value",
+    description: "Lightweight solution demonstrating impact and refining the business case."
   },
   {
-    value: "20+",
-    label: "Portfolio Deployments"
-  },
-  {
-    value: "15-20%",
-    label: "Average Revenue Uplift"
+    title: "Scale & Embed",
+    description: "Production deployment with capabilities embedded across your organisation."
   }
 ];
 
@@ -108,9 +104,18 @@ export const companyInfo = {
 
 export const engagementModels = [
   {
-    icon: "🚀",
-    title: "Rapid Assessment & POC",
-    description: "4-8 week sprints to identify opportunities, build proof of concepts, and demonstrate tangible value. Perfect for testing ideas before larger commitments.",
+    title: "Strategic Advisory",
+    description: "Senior-level guidance to shape your AI roadmap and select the right partners.",
+    features: [
+      "Business case development",
+      "Vendor selection support",
+      "Strategic partner introductions",
+      "Transition planning"
+    ]
+  },
+  {
+    title: "Operational Sprints",
+    description: "Focused delivery cycles to rapidly test ideas and build working solutions.",
     features: [
       "Quick opportunity identification",
       "Working prototype delivery",
@@ -119,25 +124,13 @@ export const engagementModels = [
     ]
   },
   {
-    icon: "🎯",
-    title: "Targeted Transformation",
-    description: "8-16 week focused initiatives to solve specific challenges. We bring in specialist expertise from our network as needed for domain-specific requirements.",
+    title: "Interim Executive",
+    description: "Hands-on leadership to deliver production deployments and enable your team.",
     features: [
       "End-to-end solution delivery",
       "Access to specialist network",
       "Production-ready deployment",
       "Team enablement included"
-    ]
-  },
-  {
-    icon: "🔍",
-    title: "Strategic Advisory",
-    description: "Help build comprehensive business cases for larger initiatives. We can facilitate introductions to tier-1 consulting firms when multi-year transformations are needed.",
-    features: [
-      "Business case development",
-      "Vendor selection support",
-      "Strategic partner introductions",
-      "Transition planning"
     ]
   }
 ];
