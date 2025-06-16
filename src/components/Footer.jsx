@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <p className="footer-tagline">Building solutions you own, in environments you control.</p>
+        <p className="footer-tagline">Delivering measurable EBITDA impact through operational excellence.</p>
         <p className="footer-copyright">
           &copy; {currentYear} Data & AI Analytics Consultancy. All rights reserved.
         </p>
