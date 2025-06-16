@@ -139,17 +139,6 @@ export const engagementModels = [
       "Strategic partner introductions",
       "Transition planning"
     ]
-  },
-  {
-    icon: "🤝",
-    title: "Flexible Resourcing",
-    description: "Access our network of pre-vetted specialists for specific needs - from data engineers to industry experts. Scale up or down as your project evolves.",
-    features: [
-      "On-demand expertise",
-      "Pre-vetted specialists",
-      "Flexible team scaling",
-      "Single point of contact"
-    ]
   }
 ];
 

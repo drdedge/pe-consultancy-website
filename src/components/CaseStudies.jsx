@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { portfolioCategories } from '../data/portfolio';
+import CaseCarousel from './CaseCarousel';
 import './CaseStudies.css';
 
 const CaseStudies = () => {
@@ -17,54 +18,7 @@ const CaseStudies = () => {
             <h3 className="category-title">{category.title}</h3>
             <p className="category-description">{category.description}</p>
             
-            <div className="cases-grid">
-              {category.cases.map(caseStudy => (
-                <Link 
-                  to={`/portfolio/${caseStudy.id}`} 
-                  key={caseStudy.id} 
-                  className="case-card"
-                >
-                  {/* Placeholder for image - will show when images are added */}
-                  <div className="case-image">
-                    {caseStudy.image && (
-                      <img src={caseStudy.image} alt={caseStudy.headline} />
-                    )}
-                    {!caseStudy.image && (
-                      <div className="image-placeholder">
-                        <span>{caseStudy.client}</span>
-                      </div>
-                    )}
-                  </div>
-                  
-                  <div className="case-content">
-                    <h4 className="case-headline">{caseStudy.headline}</h4>
-                    
-                    <p className="case-challenge">{caseStudy.challenge}</p>
-                    
-                    <div className="case-meta">
-                      <div className="tech-tags">
-                        {caseStudy.techStack.map((tech, index) => (
-                          <span key={index} className="tech-tag">{tech}</span>
-                        ))}
-                      </div>
-                      
-                      <div className="timeframe">
-                        <span className="timeframe-label">Delivered in</span>
-                        <span className="timeframe-value">{caseStudy.timeframe}</span>
-                      </div>
-                    </div>
-                    
-                    <div className="case-metrics">
-                      {caseStudy.metrics.map((metric, index) => (
-                        <div key={index} className="metric-box">
-                          {metric}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
+            <CaseCarousel cases={category.cases} />
           </div>
         ))}
         
