@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './CaseStudySlide.css';
 
 const CaseStudySlide = ({ caseStudy }) => {
   const { details } = caseStudy;
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    if (containerRef.current) {
+      containerRef.current.scrollTop = 0;
+    }
+  }, [caseStudy]);
   
   // Different slide layouts based on content
   const renderSlideContent = () => {
@@ -145,7 +152,7 @@ const CaseStudySlide = ({ caseStudy }) => {
   );
 
   return (
-    <div className="case-study-slide">
+    <div className="case-study-slide" ref={containerRef}>
       {renderSlideContent()}
     </div>
   );
