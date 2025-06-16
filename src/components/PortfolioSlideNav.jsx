@@ -16,20 +16,17 @@ const PortfolioSlideNav = ({ categories, currentCaseId, onCaseSelect, isOpen, on
 
   return (
     <>
-      <button 
+      <button
         className="menu-toggle"
         onClick={onToggle}
         aria-label="Toggle navigation menu"
       >
-        <span className="menu-icon">
-          {isOpen ? '×' : '☰'}
-        </span>
+        <span className="menu-icon">☰</span>
       </button>
 
       <nav className={`portfolio-nav ${isOpen ? 'open' : 'closed'}`}>
         <div className="nav-header">
           <h2>Case Studies</h2>
-          <p className="nav-subtitle">Click to navigate</p>
         </div>
 
         <div className="nav-categories">

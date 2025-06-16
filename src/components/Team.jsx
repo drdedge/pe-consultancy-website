@@ -102,7 +102,7 @@ export const WaysOfWorking = () => {
         
         <div className="working-philosophy">
           <h3>Our Core Principle: You Own the Future</h3>
-          <p>Every solution we build is designed for your team to own, operate, and evolve. We believe in empowering your organization with:</p>
+          <p>Every solution we build is designed for your organisation to own, operate and evolve. We believe in empowering your organisation with:</p>
           <div className="philosophy-points">
             {philosophyPoints.map((point, index) => (
               <div key={index} className="philosophy-item">
@@ -113,10 +113,10 @@ export const WaysOfWorking = () => {
           </div>
           <div className="philosophy-footer">
             <p className="philosophy-highlight">
-              Whether you need a quick POC, full implementation, or strategic guidance, we adapt to your needs.
+              Whether you require a quick proof of concept, fractional expertise or full project delivery, we adapt to your organisation's needs.
             </p>
             <p className="philosophy-subtext">
-              From individual expert consultants to full delivery teams, from 2-week sprints to multi-year transformations - we scale to match your requirements.
+              We can embed alongside your team on a part-time basis or provide end-to-end delivery, scaling from two-week sprints to multi-year transformations.
             </p>
           </div>
         </div>

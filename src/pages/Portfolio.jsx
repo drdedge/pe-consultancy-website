@@ -19,7 +19,8 @@ const Portfolio = () => {
   const [activeIndex, setActiveIndex] = useState(
     currentCaseIndex >= 0 ? currentCaseIndex : 0
   );
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  // Start with the navigation menu collapsed
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
   
   const currentCase = allCases[activeIndex];

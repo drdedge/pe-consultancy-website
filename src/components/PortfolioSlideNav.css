@@ -68,12 +68,6 @@
   color: #333;
 }
 
-.nav-subtitle {
-  font-size: 0.875rem;
-  color: #666;
-  margin: 4px 0 0 0;
-}
-
 /* Navigation Categories */
 .nav-categories {
   flex: 1;
