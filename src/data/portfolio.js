@@ -601,7 +601,7 @@ export const portfolioCategories = [
   id: 'pricing-optimization',
   headline: 'Identified 22% Net Revenue Pricing Opportunity',
   client: 'SaaS Platform',
-  image: '/src/assets/images/case-studies/pricing-optimization.jpg',
+  image: '/src/assets/images/case-studies/pricing-optimization.png',
   challenge: 'No systematic approach to managing customer contracts and terms despite competitive pressure.',
   techStack: ['AI', 'Analytics', 'Automation'],
   timeframe: '8 weeks',
